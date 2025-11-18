@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice</title>
-    <link rel="stylesheet" href="C:\Users\hp\Downloads\practice\style.css">
-</head>
-<body>
-    <h1>Hello Umar</h1>
-</body>
+    <link rel="stylesheet" href="C:\Users\hp\Downloads\practice\style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-gradient-to-l from-fuchsia-800 to-indigo-600 h-screen">
+      <header class="flex justify-between  text-white p-6">
+        <h1 class="text-3xl font-bold">My Portfolio</h1>
+        <nav>
+          <ul class="flex space-x-6">
+            <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+            <li>
+              <a href="#projects" class="hover:text-yellow-400">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-yellow-400">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="flex justify-between py-6 my-20 px-40"> 
+       <div class="w-1/2">
+         <h1 class="text-[#e67e22] text-8xl font-bold mb-7">Syed Umar</h1>
+        <h3 class="text-[#ecf0f1] text-3xl font-bold  mb-7">Web Developer & SEO Specialist</h3>
+        <p class="text-[#bdc3c7] text-lg mb-7">I create beautiful, responsive, and user-friendly websites with modern technologies and best practices. Passionate about bringing creative ideas to life through code and optimizing them for search engines.</p>
+        <button class="bg-gradient-to-l from-fuchsia-800 to-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">View My Work</button>
+       </div>
+      <div>
+          <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSggcLZpzhtMon7qA6FkB5MS99XjlVsns9nJw&s"
+          alt="Profile photo of John Doe"
+          title="John Doe" class="rounded-full w-96 h-96 border-4 border-blue-500 animate-pulse" 
+        />
+      </div>
+      </div>
+    </div>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Web Developer with a passion for modern design.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <article>
+          <h3>Project 1</h3>
+          <p>Description of Project 1</p>
+        </article>
+        <article>
+          <h3>Project 2</h3>
+          <p>Description of Project 2</p>
+        </article>
+      </section>
+    </main>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <audio controls>
+      <source src="C:\Users\hp\Downloads\audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <table>
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Portfolio Website</td>
+          <td>2025</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <ol>
+      <li>Plan</li>
+      <li>Design</li>
+      <li>Develop</li>
+    </ol>
+
+    <footer>
+      <p>&copy; 2025 Your Name</p>
+    </footer>
+  </body>
 </html>
